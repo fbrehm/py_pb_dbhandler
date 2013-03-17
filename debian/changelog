@@ -1,0 +1,18 @@
+profitbricks-python-dbhandler (0.3.1-2) unstable; urgency=low
+
+  * Version bump
+
+ -- Frank Brehm <frank.brehm@profitbricks.com>  Sun, 17 Mar 2013 14:18:52 +0100
+
+profitbricks-python-dbhandler (0.3.1-1) unstable; urgency=low
+
+  * Added increase-version.sh
+
+ -- Frank Brehm <frank.brehm@profitbricks.com>  Sun, 17 Mar 2013 14:12:54 +0100
+
+profitbricks-python-dbhandler (0.3.0-1) unstable; urgency=low
+
+  * Initial
+  * Created debian infrastructure
+
+ -- Frank Brehm <frank.brehm@profitbricks.com>  Sun, 17 Mar 2013 13:55:05 +0100
