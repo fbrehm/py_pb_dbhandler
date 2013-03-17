@@ -1,0 +1,27 @@
+This work was packaged for Debian by:
+
+    Frank Brehm <frank.brehm@profitbricks.com> on Thu, 28 Feb 2013 13:30:00 +0100
+
+It was downloaded from git!
+
+Upstream Author:
+
+	Frank Brehm (<frank.brehm@profitbricks.com>)
+
+Copyright:
+
+    <Copyright (C) 2013 Frank Brehm + Profitbricks>
+
+The Python module package for common used objects, error classes and functions
+is licensed under the LGPL version 3,
+see "/usr/share/common-licenses/LGPL-3".
+
+License:
+	
+The Debian packaging is:
+
+    Copyright (C) 2013 Holger Levsen <holger@debian.org>
+
+and is licensed under the GPL version 3,
+see "/usr/share/common-licenses/GPL-3".
+

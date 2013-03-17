@@ -1,0 +1,7 @@
+*.debhelper
+*.log
+*.substvars
+files
+profitbricks-python-dbhandler
+profitbricks-python-dbhandler-doc
+storage-consistence-doc

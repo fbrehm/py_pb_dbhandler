@@ -1,0 +1,6 @@
+storage-consistence (0.3.0-1) unstable; urgency=low
+
+  * Initial
+  * Created debian infrastructure
+
+ -- Frank Brehm <frank.brehm@profitbricks.com>  Sun, 17 Mar 2013 13:55:05 +0100

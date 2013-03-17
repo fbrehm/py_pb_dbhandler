@@ -1,0 +1,26 @@
+Source: profitbricks-python-dbhandler
+Section: python
+Priority: extra
+Maintainer: Frank Brehm <frank.brehm@profitbricks.com>
+Build-Depends: debhelper (>= 7.0.50~), python-epydoc, python-docutils,
+ python-support, texlive-latex-base, texlive-latex-extra, python-argparse, ghostscript,
+ profitbricks-python-logging (>=0.3.0-1), profitbricks-python-base (>=0.4.3-1),
+ python-psycopg2, python-iniparse
+Standards-Version: 3.8.4
+Vcs-Git: git+ssh://git.profitbricks.localdomain/srv/git/python/pb-base.git
+Vcs-Browser: http://git.profitbricks.localdomain/gitweb/?p=python/pb-base.git;a=summary
+
+Package: profitbricks-python-dbhandler
+Architecture: all
+Depends: ${misc:Depends}, python, python-support, python-argparse,
+ profitbricks-python-logging (>=0.3.0-1), coreutils, sudo, psmisc,
+ profitbricks-python-base (>=0.4.3-1), python-psycopg2, python-iniparse
+Description: ProfitBricks Python modules for database handling
+
+Package: profitbricks-python-dbhandler-doc
+Architecture: all
+Suggests: profitbricks-python-dbhandler (= ${binary:Version}), pdf-viewer, www-browser
+Description: ProfitBricks Python modules for database handling - documentation
+ .
+ This package contains the module documentation in HTML and PDF format.
+
