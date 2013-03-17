@@ -1,3 +1,9 @@
+storage-consistence (0.3.1-1) unstable; urgency=low
+
+  * Added increase-version.sh
+
+ -- Frank Brehm <frank.brehm@profitbricks.com>  Sun, 17 Mar 2013 14:12:54 +0100
+
 storage-consistence (0.3.0-1) unstable; urgency=low
 
   * Initial

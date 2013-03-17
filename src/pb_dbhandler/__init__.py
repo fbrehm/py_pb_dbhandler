@@ -17,7 +17,7 @@ from pb_base.object import PbBaseObjectError
 __author__ = 'Frank Brehm <frank.brehm@profitbricks.com>'
 __copyright__ = '(C) 2010-2013 ProfitBricks GmbH, Berlin'
 __contact__ = 'frank.brehm@profitbricks.com'
-__version__ = '0.3.0'
+__version__ = '0.3.1'
 __license__ = 'GPL3'
 
 
