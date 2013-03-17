@@ -66,14 +66,14 @@ def init_root_logger(verbose = 0):
     root_log.addHandler(lh_console)
 
 #==============================================================================
-class ConsistenceCheckTestcase(unittest.TestCase):
+class DbHandlerTestcase(unittest.TestCase):
 
     #--------------------------------------------------------------------------
     def __init__(self, methodName = 'runTest', verbose = 0):
 
         self._verbose = int(verbose)
 
-        super(ConsistenceCheckTestcase, self).__init__(methodName)
+        super(DbHandlerTestcase, self).__init__(methodName)
 
     #--------------------------------------------------------------------------
     @property
