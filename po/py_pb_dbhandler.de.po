@@ -20,12 +20,12 @@ msgstr ""
 
 #: src/pb_dbhandler/handler.py:363
 msgid "Destroying base database object."
-msgstr ""
+msgstr "Zerstöre Datenbankobjekt."
 
 #: src/pb_dbhandler/handler.py:389
 #, python-format
 msgid "Error performing .pgpass file, using empty password: %s"
-msgstr ""
+msgstr "Fehler bei der Verabeitung der .pgpass-Datei, verwende leeres Passwort: %s"
 
 #: src/pb_dbhandler/handler.py:408
 msgid "Trying to establish a connection while an existing "
