@@ -1,3 +1,10 @@
+profitbricks-python-dbhandler (0.4.0-1) unstable; urgency=low
+
+  * Added and integrated i18n
+  * Added german translation for i18n
+
+ -- Frank Brehm <frank.brehm@profitbricks.com>  Mon, 18 Mar 2013 10:04:37 +0100
+
 profitbricks-python-dbhandler (0.3.3-1) stable; urgency=low
 
   * Version bump
