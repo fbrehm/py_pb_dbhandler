@@ -23,10 +23,10 @@ build-stamp:
 	@echo "Setup python sources ..."
 	python setup.py build
 
-	#@echo ""
-	#@echo "Compiling language message files ..."
-	#$(MAKE) -C po
-	#touch build-stamp
+	@echo ""
+	@echo "Compiling language message files ..."
+	$(MAKE) -C po
+	touch build-stamp
 
 clean:
 	$(info )
@@ -39,7 +39,7 @@ clean:
 	rm -f build-stamp
 	rm -rf build
 	-find . -name '*.py[co]' | xargs rm -f
-	#$(MAKE) -C po clean
+	$(MAKE) -C po clean
 
 	dh_clean
 	rm -rf profitbricks-python-dbhandler.egg-info
@@ -61,7 +61,9 @@ install: build
 	@echo "Installing Python stuff ..."
 	python setup.py install --force --root=$(INSTALL_DIR) --no-compile -O0 --install-layout=deb
 
-	#$(MAKE) -C po DESTDIR=$(CURDIR)/debian/$(BIN_PKGNAME) install
+	@echo ""
+	@echo "Installing I18n stuff ..."
+	$(MAKE) -C po DESTDIR=$(CURDIR)/debian/$(BIN_PKGNAME) install
 
 	@echo ""
 	@echo "Documentation ..."
