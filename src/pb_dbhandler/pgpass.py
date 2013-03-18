@@ -17,8 +17,6 @@ import logging
 import re
 import glob
 
-from gettext import gettext as _
-
 # Third party modules
 
 # Own modules
@@ -35,7 +33,12 @@ from pb_base.handler import PbBaseHandler
 
 from pb_dbhandler import BaseDbError
 
-__version__ = '0.1.0'
+from pb_dbhandler.translate import translator
+
+_ = translator.lgettext
+__ = translator.lngettext
+
+__version__ = '0.2.0'
 
 log = logging.getLogger(__name__)
 
@@ -78,7 +81,7 @@ class PgPassFileNotExistsError(PgPassFileError):
         Typecasting into a string for error output.
         """
 
-        return _("Pgpassfile %s doesn't exists.") % (self.filename)
+        return _("Pgpassfile %r doesn't exists.") % (self.filename)
 
 #==============================================================================
 class PgPassFileNotReadableError(PgPassFileError):
@@ -102,7 +105,7 @@ class PgPassFileNotReadableError(PgPassFileError):
         Typecasting into a string for error output.
         """
 
-        return _("Pgpassfile %s is not readable.") % (self.filename)
+        return _("Pgpassfile %r is not readable.") % (self.filename)
 
 #==============================================================================
 class PgPassEntry(PbBaseObject):
