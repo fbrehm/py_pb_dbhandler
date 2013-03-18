@@ -1,3 +1,9 @@
+profitbricks-python-dbhandler (0.4.1-1) stable; urgency=low
+
+  * Declared for stable
+
+ -- Frank Brehm <frank.brehm@profitbricks.com>  Mon, 18 Mar 2013 10:09:58 +0100
+
 profitbricks-python-dbhandler (0.4.0-1) unstable; urgency=low
 
   * Added and integrated i18n
