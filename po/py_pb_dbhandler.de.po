@@ -97,27 +97,27 @@ msgstr "Pgpass-Datei %r ist nicht lesbar."
 #: src/pb_dbhandler/pgpass.py:440
 #, python-format
 msgid "Others have permissions on %r."
-msgstr ""
+msgstr "Andere (others) haben Rechte auf %r."
 
 #: src/pb_dbhandler/pgpass.py:442
 #, python-format
 msgid "Group has permissions on %r."
-msgstr ""
+msgstr "Die Gruppe hat Rechte auf %r."
 
 #: src/pb_dbhandler/pgpass.py:444
 #, python-format
 msgid "Group and others have permissions on %r."
-msgstr ""
+msgstr "Die Gruppe und andere (others) haben Rechte auf %r."
 
 #: src/pb_dbhandler/pgpass.py:470
 #, python-format
 msgid "No valid content in %r found."
-msgstr ""
+msgstr "Ungültigen Inhalt in %r gefunden."
 
 #: src/pb_dbhandler/pgpass.py:493
 #, python-format
 msgid "Got fields: %r"
-msgstr ""
+msgstr "Erhaltene Felder: %r"
 
 #: src/pb_dbhandler/pgpass.py:495
 #, python-format
@@ -125,11 +125,13 @@ msgid ""
 "Invalid entry %(entry)r in %(file)r line %(rownum)d found, only %(nr)d "
 "fields found instead of 5."
 msgstr ""
+"Ungültigen Eintrag %(entry)r in %(file)r, Zeile %(rownum)d, gefunden, "
+"nur %(nr)d Felder anstelle von fünf Feldern gefunden."
 
 #: src/pb_dbhandler/pgpass.py:507
 #, python-format
 msgid "Invalid port %(port)r in %(file)r line %(rownum)d found."
-msgstr ""
+msgstr "Ungültigen Port %(port)r in %(file)r, Zeile %(rownum)d, gefunden."
 
 #: src/pb_dbhandler/pgpass.py:562
 #, python-format
@@ -137,6 +139,8 @@ msgid ""
 "Found entries in %(file)r:\n"
 "%(list)s"
 msgstr ""
+"Gefundene Einträge in %(file)r:\n"
+"%(list)s"
 
 #: src/pb_dbhandler/pgpass.py:573
 #, python-format
@@ -144,6 +148,8 @@ msgid ""
 "Password found for host %(host)r, port %(port)d, database %(db)r and user "
 "%(usr)r."
 msgstr ""
+"Passwort für Host %(host)r, Port %(port)d, Datenbank %(db)r "
+"und Nutzer %(usr)r gefunden."
 
 #: src/pb_dbhandler/pgpass.py:575
 #, python-format
@@ -151,3 +157,5 @@ msgid ""
 "No password found for host %(host)r, port %(port)d, database %(db)r and user "
 "%(usr)r."
 msgstr ""
+"Kein Passwort für Host %(host)r, Port %(port)d, Datenbank %(db)r "
+"und Nutzer %(usr)r gefunden."
