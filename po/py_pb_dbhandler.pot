@@ -26,7 +26,8 @@ msgid "Error performing .pgpass file, using empty password: %s"
 msgstr ""
 
 #: src/pb_dbhandler/handler.py:408
-msgid "Trying to establish a connection while an existing "
+msgid ""
+"Trying to establish a connection while an existing database connection."
 msgstr ""
 
 #: src/pb_dbhandler/handler.py:424
