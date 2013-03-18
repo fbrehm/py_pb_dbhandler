@@ -17,8 +17,6 @@ import logging
 import re
 import glob
 
-from gettext import gettext as _
-
 # Third party modules
 
 # Own modules
@@ -35,7 +33,12 @@ from pb_base.handler import PbBaseHandler
 
 from pb_dbhandler import BaseDbError
 
-__version__ = '0.1.0'
+from pb_dbhandler.translate import translator
+
+_ = translator.lgettext
+__ = translator.lngettext
+
+__version__ = '0.2.0'
 
 log = logging.getLogger(__name__)
 

@@ -17,8 +17,6 @@ import os.path
 import re
 import logging
 
-from gettext import gettext as _
-
 # Third party modules
 import psycopg2
 
@@ -43,7 +41,12 @@ from pb_dbhandler.pgpass import PgPassFileError
 from pb_dbhandler.pgpass import PgPassFileNotExistsError
 from pb_dbhandler.pgpass import PgPassFile
 
-__version__ = '0.1.0'
+from pb_dbhandler.translate import translator
+
+_ = translator.lgettext
+__ = translator.lngettext
+
+__version__ = '0.2.0'
 
 log = logging.getLogger(__name__)
 
