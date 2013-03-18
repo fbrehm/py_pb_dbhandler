@@ -159,3 +159,14 @@ msgid ""
 msgstr ""
 "Kein Passwort für Host %(host)r, Port %(port)d, Datenbank %(db)r "
 "und Nutzer %(usr)r gefunden."
+
+#: src/pb_dbhandler/translate.py:40
+#, python-format
+msgid "Basedir: %r"
+msgstr "Basis-Verzeichnis: %r"
+
+#: src/pb_dbhandler/translate.py:41
+#, python-format
+msgid "Found .mo-file: %r"
+msgstr "Gefundene .mo-Datei: %r"
+

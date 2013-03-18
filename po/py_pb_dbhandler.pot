@@ -144,3 +144,14 @@ msgstr ""
 msgid "No password found for host %(host)r, port %(port)d, database %(db)r and "
       "user %(usr)r."
 msgstr ""
+
+#: src/pb_dbhandler/translate.py:40
+#, python-format
+msgid "Basedir: %r"
+msgstr ""
+
+#: src/pb_dbhandler/translate.py:41
+#, python-format
+msgid "Found .mo-file: %r"
+msgstr ""
+
