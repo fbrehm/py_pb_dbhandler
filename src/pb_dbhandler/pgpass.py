@@ -78,7 +78,7 @@ class PgPassFileNotExistsError(PgPassFileError):
         Typecasting into a string for error output.
         """
 
-        return _("Pgpassfile %s doesn't exists.") % (self.filename)
+        return _("Pgpassfile %r doesn't exists.") % (self.filename)
 
 #==============================================================================
 class PgPassFileNotReadableError(PgPassFileError):
@@ -102,7 +102,7 @@ class PgPassFileNotReadableError(PgPassFileError):
         Typecasting into a string for error output.
         """
 
-        return _("Pgpassfile %s is not readable.") % (self.filename)
+        return _("Pgpassfile %r is not readable.") % (self.filename)
 
 #==============================================================================
 class PgPassEntry(PbBaseObject):

@@ -438,13 +438,13 @@ class BaseDbHandler(PbBaseHandler):
         """
 
         if self.verbose > 3:
-            log.debug(_("DB connection: '%r'"), self.connection)
+            log.debug(_("DB connection: %r"), self.connection)
             if self.connection:
                 if self.connection.closed:
                     log.debug(_("DB connection closed."))
                 else:
                     log.debug(_("DB connection opened."))
-            log.debug(_("DB cursor: '%r'"), self.cursor)
+            log.debug(_("DB cursor: %r"), self.cursor)
 
         if not self.connected:
             raise BaseDbError(_("Not connected to database."))

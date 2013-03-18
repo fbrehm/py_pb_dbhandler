@@ -40,7 +40,7 @@ msgstr ""
 
 #: src/pb_dbhandler/handler.py:441
 #, python-format
-msgid "DB connection: '%r'"
+msgid "DB connection: %r"
 msgstr ""
 
 #: src/pb_dbhandler/handler.py:444
@@ -53,7 +53,7 @@ msgstr ""
 
 #: src/pb_dbhandler/handler.py:447
 #, python-format
-msgid "DB cursor: '%r'"
+msgid "DB cursor: %r"
 msgstr ""
 
 #: src/pb_dbhandler/handler.py:450
@@ -83,12 +83,12 @@ msgstr ""
 
 #: src/pb_dbhandler/pgpass.py:81
 #, python-format
-msgid "Pgpassfile %s doesn't exists."
+msgid "Pgpassfile %r doesn't exists."
 msgstr ""
 
 #: src/pb_dbhandler/pgpass.py:105
 #, python-format
-msgid "Pgpassfile %s is not readable."
+msgid "Pgpassfile %r is not readable."
 msgstr ""
 
 #: src/pb_dbhandler/pgpass.py:440

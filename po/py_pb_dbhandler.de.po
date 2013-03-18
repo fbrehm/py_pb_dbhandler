@@ -31,67 +31,68 @@ msgstr "Fehler bei der Verabeitung der .pgpass-Datei, verwende leeres Passwort: 
 msgid ""
 "Trying to establish a connection while an existing database connection."
 msgstr ""
+"Versuche eine Datenbankverbindung einzurichten, während schon eine existiert."
 
 #: src/pb_dbhandler/handler.py:424
 msgid "Used parameters to connect to database:"
-msgstr ""
+msgstr "Verwendete Parameter für die Datenbankverbindung:"
 
 #: src/pb_dbhandler/handler.py:430
 msgid "Setting DB connection to readonly."
-msgstr ""
+msgstr "Setze die Datenbnk-Verbindung auf nur-lesend."
 
 #: src/pb_dbhandler/handler.py:441
 #, python-format
-msgid "DB connection: '%r'"
-msgstr ""
+msgid "DB connection: %r"
+msgstr "Datenbankverbindung: %r"
 
 #: src/pb_dbhandler/handler.py:444
 msgid "DB connection closed."
-msgstr ""
+msgstr "Datenbankverbindung geschlossen."
 
 #: src/pb_dbhandler/handler.py:446
 msgid "DB connection opened."
-msgstr ""
+msgstr "Datenbankverbindung geöffnet."
 
 #: src/pb_dbhandler/handler.py:447
 #, python-format
-msgid "DB cursor: '%r'"
-msgstr ""
+msgid "DB cursor: %r"
+msgstr "Datenbankcursor: %r"
 
 #: src/pb_dbhandler/handler.py:450
 msgid "Not connected to database."
-msgstr ""
+msgstr "Nicht mit der Datenbank verbunden."
 
 #: src/pb_dbhandler/handler.py:456
 msgid "Opening database cursor."
-msgstr ""
+msgstr "Öffne Datenbankcursor."
 
 #: src/pb_dbhandler/handler.py:475
 msgid "Closing database cursor."
-msgstr ""
+msgstr "Schließe Datenbankcursor."
 
 #: src/pb_dbhandler/handler.py:495
 msgid "Closing the database connection."
-msgstr ""
+msgstr "Schließe Datenbankverbindung."
 
 #: src/pb_dbhandler/handler.py:498
 msgid "Destroying db connection object."
-msgstr ""
+msgstr "Zerstöre Datenbankverbindungsobjekt."
 
 #: src/pb_dbhandler/pgpass.py:50
 #, python-format
 msgid "Environment variable %r not set."
-msgstr ""
+msgstr "Umgebungsvariable %r nicht gesetzt."
 
 #: src/pb_dbhandler/pgpass.py:81
 #, python-format
-msgid "Pgpassfile %s doesn't exists."
-msgstr ""
+msgid "Pgpassfile %r doesn't exists."
+msgstr "Pgpass-Datei %r existiert nicht."
 
 #: src/pb_dbhandler/pgpass.py:105
 #, python-format
-msgid "Pgpassfile %s is not readable."
-msgstr ""
+msgid "Pgpassfile %r is not readable."
+msgstr "Pgpass-Datei %r ist nicht lesbar."
 
 #: src/pb_dbhandler/pgpass.py:440
 #, python-format
