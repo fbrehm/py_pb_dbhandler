@@ -20,6 +20,9 @@ __contact__ = 'frank.brehm@profitbricks.com'
 __version__ = '0.4.2'
 __license__ = 'GPL3'
 
+default_db_host = 'localhost'
+default_db_port = 5432
+max_port_number = 2**15 - 1
 
 #==============================================================================
 class BaseDbError(PbBaseObjectError):
