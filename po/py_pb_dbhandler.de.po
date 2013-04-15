@@ -79,6 +79,61 @@ msgstr "Schließe Datenbankverbindung."
 msgid "Destroying db connection object."
 msgstr "Zerstöre Datenbankverbindungsobjekt."
 
+#: src/pb_dbhandler/helper.py:47
+msgid "The port number of a PostgreSQL database must be greater than zero."
+msgstr "Die Portnummer einer PostgreSQL-Datenbank muss größer als Null sein."
+
+#: src/pb_dbhandler/helper.py:48
+#, python-format
+msgid "The port number of a PostgreSQL database must be less or equal %d."
+msgstr "Die Portnummer einer PostgreSQL-Datenbank muss kleiner oder gleich %d sein."
+
+#: src/pb_dbhandler/helper.py:83
+msgid "Database options"
+msgstr "Datenbankoptinen"
+
+#: src/pb_dbhandler/helper.py:85
+#, python-format
+msgid "The host of the PostgreSQL database (Default: %r)."
+msgstr "Der Hostname der PostgreSQL-Datenbank (Vorgabe: %r)."
+
+#: src/pb_dbhandler/helper.py:95
+#, python-format
+msgid "The TCP port of PostgreSQL database on the database machine (Default: %d)."
+msgstr ""
+"Die Portnummer der PostgreSQL-Datenbank auf dem Datenbankserver (Vorgabe: %d)."
+
+#: src/pb_dbhandler/helper.py:106
+msgid "The database schema (database) used on DB host."
+msgstr "Das Datenbankschema (die Datenbank) auf dem Datenbankserver."
+
+#: src/pb_dbhandler/helper.py:108
+#, python-format
+msgid "The database schema (database) used on DB host (Default: %r)."
+msgstr "Das Datenbankschema (die Datenbank) auf dem Datenbankserver (Vorgabe: %r)."
+
+#: src/pb_dbhandler/helper.py:118
+msgid "The database user using for connecting to DB."
+msgstr "Der Datenbanknutzer, der für die Verbindung zur Datenbank verwendet wird."
+
+#: src/pb_dbhandler/helper.py:120
+#, python-format
+msgid "The database user using for connecting to DB (Default: %r)."
+msgstr ""
+"Der Datenbanknutzer, der für die Verbindung zur Datenbank verwendet wird (Vorgabe: %r)."
+
+#: src/pb_dbhandler/helper.py:130
+msgid "The password of the database user connecting to DB."
+msgstr "Das Paßwort des Datenbanknutzers."
+
+#: src/pb_dbhandler/helper.py:131
+msgid "The usage of this parameter is not recommended."
+msgstr "Die Verwendung dieser Option wird nicht empfohlen."
+
+#: src/pb_dbhandler/helper.py:132
+msgid "Better use an appropriate entry in the $HOME/.pgpass file."
+msgstr "Verwenden Sie besser einen entspechenden Eintrag in der $HOME/.pgpass Datei."
+
 #: src/pb_dbhandler/pgpass.py:50
 #, python-format
 msgid "Environment variable %r not set."
