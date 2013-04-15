@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pot_file="py_pb_dbhandler1.pot"
+pot_file="py_pb_dbhandler.pot"
 output_dir="po"
 pkg_version="0.4.2"
 pkg_name="profitbricks-python-dbhandler"
@@ -11,7 +11,6 @@ cd $(dirname $0)
 xgettext --output="${pot_file}" \
         --output-dir="${output_dir}" \
         --language="Python" \
-        --join-existing \
         --add-comments \
         --keyword=_ \
         --keyword=__ \
@@ -25,6 +24,9 @@ xgettext --output="${pot_file}" \
         --msgid-bugs-address=frank.brehm@profitbricks.com \
         $(find "${src_dir}" -type f -name '*.py' | sort)
 
-sed -i -e 's/msgid[ 	][ 	]*"/msgid "/' -e 's/msgstr[ 	][ 	]*"/msgstr "/' "${output_dir}/${pot_file}"
+sed -i -e 's/msgid[ 	][ 	]*"/msgid "/' \
+       -e 's/msgstr[ 	][ 	]*"/msgstr "/' \
+       -e 's/^        /      /' \
+       "${output_dir}/${pot_file}"
 
 # vim: ts=4 et

@@ -408,8 +408,7 @@ class BaseDbHandler(PbBaseHandler):
         """
 
         if self.connection and not self.connection.closed:
-            msg = _("Trying to establish a connection while an existing " +
-                    "database connection.")
+            msg = _("Trying to establish a connection while an existing database connection.")
             raise BaseDbError(msg)
 
         self.check_password()

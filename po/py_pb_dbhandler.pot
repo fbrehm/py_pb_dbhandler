@@ -5,141 +5,193 @@
 #
 #, fuzzy
 msgid ""
-msgstr "Project-Id-Version: profitbricks-python-dbhandler\n"
-       "Report-Msgid-Bugs-To: frank.brehm@profitbricks.com\n"
-       "POT-Creation-Date: 2013-03-18 08:53+0100\n"
-       "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-       "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-       "Language-Team: LANGUAGE <LL@li.org>\n"
-       "Language: \n"
-       "MIME-Version: 1.0\n"
-       "Content-Type: text/plain; charset=UTF-8\n"
-       "Content-Transfer-Encoding: 8bit\n"
+msgstr "Project-Id-Version: profitbricks-python-dbhandler 0.4.2\n"
+      "Report-Msgid-Bugs-To: frank.brehm@profitbricks.com\n"
+      "POT-Creation-Date: 2013-04-15 18:31+0200\n"
+      "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+      "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+      "Language-Team: LANGUAGE <LL@li.org>\n"
+      "Language: \n"
+      "MIME-Version: 1.0\n"
+      "Content-Type: text/plain; charset=CHARSET\n"
+      "Content-Transfer-Encoding: 8bit\n"
 
-#: src/pb_dbhandler/handler.py:363
+#: src/pb_dbhandler/handler.py:366
 msgid "Destroying base database object."
 msgstr ""
 
-#: src/pb_dbhandler/handler.py:389
+#: src/pb_dbhandler/handler.py:392
 #, python-format
 msgid "Error performing .pgpass file, using empty password: %s"
 msgstr ""
 
-#: src/pb_dbhandler/handler.py:408
-msgid ""
-"Trying to establish a connection while an existing database connection."
+#: src/pb_dbhandler/handler.py:411
+msgid "Trying to establish a connection while an existing database connection."
 msgstr ""
 
-#: src/pb_dbhandler/handler.py:424
+#: src/pb_dbhandler/handler.py:426
 msgid "Used parameters to connect to database:"
 msgstr ""
 
-#: src/pb_dbhandler/handler.py:430
+#: src/pb_dbhandler/handler.py:432
 msgid "Setting DB connection to readonly."
 msgstr ""
 
-#: src/pb_dbhandler/handler.py:441
+#: src/pb_dbhandler/handler.py:443
 #, python-format
 msgid "DB connection: %r"
 msgstr ""
 
-#: src/pb_dbhandler/handler.py:444
+#: src/pb_dbhandler/handler.py:446
 msgid "DB connection closed."
 msgstr ""
 
-#: src/pb_dbhandler/handler.py:446
+#: src/pb_dbhandler/handler.py:448
 msgid "DB connection opened."
 msgstr ""
 
-#: src/pb_dbhandler/handler.py:447
+#: src/pb_dbhandler/handler.py:449
 #, python-format
 msgid "DB cursor: %r"
 msgstr ""
 
-#: src/pb_dbhandler/handler.py:450
+#: src/pb_dbhandler/handler.py:452
 msgid "Not connected to database."
 msgstr ""
 
-#: src/pb_dbhandler/handler.py:456
+#: src/pb_dbhandler/handler.py:458
 msgid "Opening database cursor."
 msgstr ""
 
-#: src/pb_dbhandler/handler.py:475
+#: src/pb_dbhandler/handler.py:477
 msgid "Closing database cursor."
 msgstr ""
 
-#: src/pb_dbhandler/handler.py:495
+#: src/pb_dbhandler/handler.py:497
 msgid "Closing the database connection."
 msgstr ""
 
-#: src/pb_dbhandler/handler.py:498
+#: src/pb_dbhandler/handler.py:500
 msgid "Destroying db connection object."
 msgstr ""
 
-#: src/pb_dbhandler/pgpass.py:50
+#: src/pb_dbhandler/helper.py:47
+msgid "The port number of a PostgreSQL database must be greater than zero."
+msgstr ""
+
+#: src/pb_dbhandler/helper.py:48
+#, python-format
+msgid "The port number of a PostgreSQL database must be less or equal %d."
+msgstr ""
+
+#: src/pb_dbhandler/helper.py:83
+msgid "Database options"
+msgstr ""
+
+#: src/pb_dbhandler/helper.py:85
+#, python-format
+msgid "The host of the PostgreSQL database (Default: %r)."
+msgstr ""
+
+#: src/pb_dbhandler/helper.py:95
+#, python-format
+msgid "The TCP port of PostgreSQL database on the database machine (Default: %d)."
+msgstr ""
+
+#: src/pb_dbhandler/helper.py:106
+msgid "The database schema (database) used on DB host."
+msgstr ""
+
+#: src/pb_dbhandler/helper.py:108
+#, python-format
+msgid "The database schema (database) used on DB host (Default: %r)."
+msgstr ""
+
+#: src/pb_dbhandler/helper.py:118
+msgid "The database user using for connecting to DB."
+msgstr ""
+
+#: src/pb_dbhandler/helper.py:120
+#, python-format
+msgid "The database user using for connecting to DB (Default: %r)."
+msgstr ""
+
+#: src/pb_dbhandler/helper.py:130
+msgid "The password of the database user connecting to DB."
+msgstr ""
+
+#: src/pb_dbhandler/helper.py:131
+msgid "The usage of this parameter is not recommended."
+msgstr ""
+
+#: src/pb_dbhandler/helper.py:132
+msgid "Better use an appropriate entry in the $HOME/.pgpass file."
+msgstr ""
+
+#: src/pb_dbhandler/pgpass.py:53
 #, python-format
 msgid "Environment variable %r not set."
 msgstr ""
 
-#: src/pb_dbhandler/pgpass.py:81
+#: src/pb_dbhandler/pgpass.py:84
 #, python-format
 msgid "Pgpassfile %r doesn't exists."
 msgstr ""
 
-#: src/pb_dbhandler/pgpass.py:105
+#: src/pb_dbhandler/pgpass.py:108
 #, python-format
 msgid "Pgpassfile %r is not readable."
 msgstr ""
 
-#: src/pb_dbhandler/pgpass.py:440
+#: src/pb_dbhandler/pgpass.py:443
 #, python-format
 msgid "Others have permissions on %r."
 msgstr ""
 
-#: src/pb_dbhandler/pgpass.py:442
+#: src/pb_dbhandler/pgpass.py:445
 #, python-format
 msgid "Group has permissions on %r."
 msgstr ""
 
-#: src/pb_dbhandler/pgpass.py:444
+#: src/pb_dbhandler/pgpass.py:447
 #, python-format
 msgid "Group and others have permissions on %r."
 msgstr ""
 
-#: src/pb_dbhandler/pgpass.py:470
+#: src/pb_dbhandler/pgpass.py:473
 #, python-format
 msgid "No valid content in %r found."
 msgstr ""
 
-#: src/pb_dbhandler/pgpass.py:493
+#: src/pb_dbhandler/pgpass.py:496
 #, python-format
 msgid "Got fields: %r"
 msgstr ""
 
-#: src/pb_dbhandler/pgpass.py:495
+#: src/pb_dbhandler/pgpass.py:498
 #, python-format
 msgid "Invalid entry %(entry)r in %(file)r line %(rownum)d found, only %(nr)d "
       "fields found instead of 5."
 msgstr ""
 
-#: src/pb_dbhandler/pgpass.py:507
+#: src/pb_dbhandler/pgpass.py:510
 #, python-format
 msgid "Invalid port %(port)r in %(file)r line %(rownum)d found."
 msgstr ""
 
-#: src/pb_dbhandler/pgpass.py:562
+#: src/pb_dbhandler/pgpass.py:565
 #, python-format
 msgid "Found entries in %(file)r:\n"
       "%(list)s"
 msgstr ""
 
-#: src/pb_dbhandler/pgpass.py:573
+#: src/pb_dbhandler/pgpass.py:576
 #, python-format
 msgid "Password found for host %(host)r, port %(port)d, database %(db)r and user "
       "%(usr)r."
 msgstr ""
 
-#: src/pb_dbhandler/pgpass.py:575
+#: src/pb_dbhandler/pgpass.py:578
 #, python-format
 msgid "No password found for host %(host)r, port %(port)d, database %(db)r and "
       "user %(usr)r."
@@ -154,4 +206,3 @@ msgstr ""
 #, python-format
 msgid "Found .mo-file: %r"
 msgstr ""
-
