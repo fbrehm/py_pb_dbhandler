@@ -1,12 +1,20 @@
 #!/bin/bash
 
+set -u
+set -e
+
 pot_file="py_pb_dbhandler.pot"
 output_dir="po"
-pkg_version="0.4.2"
+pkg_version="0.4.3"
 pkg_name="profitbricks-python-dbhandler"
 src_dir="src/pb_dbhandler"
 
 cd $(dirname $0)
+
+if [ ! -d po ] ; then
+    echo "Creating directory 'po' ..."
+    mkdir po
+fi
 
 xgettext --output="${pot_file}" \
         --output-dir="${output_dir}" \
