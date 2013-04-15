@@ -138,6 +138,81 @@ def init_db_argparser(parser,
             help = h_pw,
     )
 
+#==============================================================================
+def init_db_cfg_spec(spec,
+        def_db_host = default_db_host,
+        def_db_port = default_db_port,
+        def_db_schema = None,
+        def_db_user = None
+    ):
+    """
+    Method to complete the initialisation a config
+    specification file. It adds some specific configuration options
+    for the access to a PostgreSQL database.
+
+    See configobj for the syntax.
+
+    @param spec: The specification object, which should extended.
+    @type spec: dict
+    @param def_db_host: a hostname or IP address to display as the default
+                        database host
+    @type def_db_host: str
+    @param def_db_port: a TCP port number to display as the default
+                        port number of PostgreSQL on the database host.
+    @type def_db_port: int
+    @param def_db_schema: a name to display as the default database schema.
+    @type def_db_schema: str
+    @param def_db_user: a name to display as the default database user.
+    @type def_db_user: str
+
+    """
+
+    if not u'db' in spec:
+        spec[u'db'] = {}
+        spec.comments[u'db'].append('')
+        spec.comments[u'db'].append('')
+        spec.comments[u'db'].append(
+                u'Configuration parameters for the database connection')
+        spec.comments[u'db'].append(
+                u'NOTE: the database password is not included in ' +
+                u'the configuration.')
+        spec.comments[u'db'].append(
+                u'If a password is needed, then it should be ' +
+                u'included in a .pgpass file.')
+
+    db_host_spec = u"string(default = '%s')" % (
+            to_unicode_or_bust(def_db_host))
+    if not u'host' in spec[u'db']:
+        spec[u'db'][u'host'] = db_host_spec
+        spec[u'db'].comments[u'host'].append('')
+        spec[u'db'].comments[u'host'].append(
+                u'The hostname or IP address of the PostgreSQL ' +
+                u'database server')
+
+    if not u'port' in spec[u'db']:
+        spec[u'db'][u'port'] = (u'integer(min = 1, ' +
+                u'max = %d, default = %d)') % ((2**15 - 1), def_db_port)
+        spec[u'db'].comments[u'port'].append('')
+        spec[u'db'].comments[u'port'].append(
+                u'The TCP port number of the PostgreSQL database server')
+
+    schema_spec = u"string(default = '%s')" % (
+            to_unicode_or_bust(def_db_schema))
+    if not u'schema' in spec[u'db']:
+        spec[u'db'][u'schema'] = schema_spec
+        spec[u'db'].comments[u'schema'].append('')
+        spec[u'db'].comments[u'schema'].append(
+                u'The DNS database schema of the PostgreSQL ' +
+                u'database server')
+
+    user_spec = u"string(default = '%s')" % (
+            to_unicode_or_bust(def_db_user))
+    if not u'user' in spec[u'db']:
+        spec[u'db'][u'user'] = user_spec
+        spec[u'db'].comments[u'user'].append('')
+        spec[u'db'].comments[u'user'].append(
+                u'The DNS database user of the PostgreSQL ' +
+                u'database server')
 
 #==============================================================================
 
